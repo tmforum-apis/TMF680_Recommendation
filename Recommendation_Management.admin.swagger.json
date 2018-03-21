@@ -342,7 +342,7 @@
                     "$ref": "#/definitions/ShoppingCartRef", 
                     "description": "The shopping cart which the recommendation is related with."
                 }, 
-                "party": {
+                "relatedParty": {
                     "$ref": "#/definitions/RelatedPartyRef"
                 }, 
                 "item": {
