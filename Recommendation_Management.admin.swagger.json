@@ -5,7 +5,7 @@
         "description": "This is Swagger UI environment generated for the TMF Recommendation Management specification", 
         "version": "2.0"
     }, 
-    "host": "biologeek.orange-labs.fr", 
+    "host": "serverRoot", 
     "basePath": "/tmf-api/recommendationManagement/v2/", 
     "schemes": [
         "https"
@@ -241,14 +241,32 @@
                             "$ref": "#/definitions/EventSubscription"
                         }
                     }, 
-                    "500": {
-                        "description": "Internal Server Error", 
+                    "400": {
+                        "description": "Bad Request", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    },
+					"404": {
+                        "description": "Not Found", 
                         "schema": {
                             "$ref": "#/definitions/Error"
                         }
                     }, 
-                    "400": {
-                        "description": "Bad Request", 
+                    "405": {
+                        "description": "Method Not allowed", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }, 
+                    "409": {
+                        "description": "Conflict", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }, 
+					"500": {
+                        "description": "Internal Server Error", 
                         "schema": {
                             "$ref": "#/definitions/Error"
                         }
