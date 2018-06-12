@@ -337,8 +337,8 @@
                     "$ref": "#/definitions/ProductOrderRef"
                 }, 
                 "location": {
-                    "$ref": "#/definitions/GeographicLocationRef", 
-                    "description": "The geographic location which the recommendation is related with"
+                    "$ref": "#/definitions/Place", 
+                    "description": "The place which the recommendation is related with"
                 }, 
                 "channel": {
                     "$ref": "#/definitions/ChannelRef"
@@ -408,7 +408,7 @@
                 }
             }
         }, 
-        "GeographicLocationRef": {
+        "Place": {
             "type": "object", 
             "properties": {
                 "href": {
@@ -417,9 +417,27 @@
                 "id": {
                     "type": "string"
                 }, 
+				"name": {
+                    "type": "string"
+                }, 
+                "role": {
+                    "type": "string"
+                }, 
                 "@referredType": {
                     "type": "string", 
                     "description": "The actual type of the target instance when needed for disambiguation."
+                }, 
+                "@type": {
+                    "type": "string", 
+                    "description": "The class type of the actual resource (for type extension)."
+                }, 
+                "@schemaLocation": {
+                    "type": "string", 
+                    "description": "A link to the schema describing a resource (for type extension)."
+                }, 
+                "@baseType": {
+                    "type": "string", 
+                    "description": "The base type for use in polymorphic collections"
                 }
             }
         }, 
@@ -526,6 +544,14 @@
                 "@type": {
                     "type": "string", 
                     "description": "The class type of the actual resource (for type extension)."
+                }, 
+                "@schemaLocation": {
+                    "type": "string", 
+                    "description": "A link to the schema describing a resource (for type extension)."
+                }, 
+                "@baseType": {
+                    "type": "string", 
+                    "description": "The base type for use in polymorphic collections"
                 }
             }
         }, 
