@@ -1,11 +1,8 @@
-# TMF680_Recommendation
-TM Forum Open APIs (Apache 2.0) Recommendation Management API
+# TMF680 Recommendation
 
-Recommendation API is used to recommend offering quickly based on the history and
-real-time context of customer. It is a real-time and personalized recommendation API.
-It is usually provided by e-commerce or BSS, CRM system in omni-channel.
+TM Forum Open API (Apache 2.0) Recommendation API.
 
-To access this API; (the Specification, Postman Collection, Swagger file, Swagger-UI,
-Reference Implementation, Conformance Profile, and CTK) go to the Open API table at:
+real-time context of customer. It is a real-time and personalized recommendation API. It is usually provided by e-commerce or BSS, CRM system in omni-channel.
 
-https://projects.tmforum.org/wiki/display/API/Open+API+Table
+The resources in this repository are a mirror of the official versions, published here for your convenience.
+The authoritative source of information for this API is: https://www.tmforum.org/oda/open-apis/directory/
